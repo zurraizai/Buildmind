@@ -55,7 +55,7 @@ export default function Header() {
     resetStore();
     await supabase.auth.signOut();
     router.push('/login');
-    
+
   }, [supabase, router]);
 
   const go = useCallback((path: string) => router.push(path), [router]);
@@ -109,34 +109,14 @@ export default function Header() {
           onClick={() => go('/playground')}
           style={{ display: 'flex', alignItems: 'center', gap: 12, cursor: 'pointer', flexShrink: 0 }}
         >
-          <div
-            style={{
-              width: 36,
-              height: 36,
-              borderRadius: 10,
-              background: 'linear-gradient(135deg,#1a3a8a,#2563eb)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              boxShadow: '0 0 0 1px rgba(59,130,246,0.3), 0 6px 18px rgba(37,99,235,0.28)',
-              position: 'relative',
-              overflow: 'hidden',
-              flexShrink: 0,
-            }}
-          >
-            <div
-              style={{
-                position: 'absolute',
-                inset: 0,
-                background: 'linear-gradient(135deg,rgba(255,255,255,0.1),transparent)',
-              }}
-            />
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M12 2L2 7l10 5 10-5-10-5z" />
-              <path d="M2 17l10 5 10-5" />
-              <path d="M2 12l10 5 10-5" />
-            </svg>
-          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo-icon-white.svg"
+            alt="Build Mind"
+            width={42}
+            height={40}
+            style={{ flexShrink: 0 }}
+          />
           <div style={{ lineHeight: 1.15 }}>
             <p style={{ fontSize: 14, fontWeight: 700, color: '#f0f4ff', fontFamily: '"Space Grotesk",sans-serif', margin: 0 }}>
               Build Mind
