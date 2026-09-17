@@ -77,9 +77,7 @@ ${lectureContent.slice(0, 4000)}`;
     );
 
     if (!geminiResponse.ok) {
-      const err = await geminiResponse.json().catch(() => ({}));
-      const message = err?.error?.message || 'Unknown Gemini error';
-      return NextResponse.json({ error: 'AI service error: ' + message }, { status: 502 });
+      return NextResponse.json({ error: 'AI service is temporarily unavailable. Please try again.' }, { status: 502 });
     }
 
     const data = await geminiResponse.json();
