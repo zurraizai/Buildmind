@@ -134,9 +134,8 @@ export default function Login({
 
         {/* brand: name + clear "A product by Mediatiz Foundation" text */}
         <div onClick={() => router.push('/home')} {...ip} style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: 13, cursor: 'none', alignSelf: 'flex-start' }}>
-          <div style={{ width: 100, height: 100, borderRadius: 12, background: 'linear-gradient(135deg,#1a3a8a,#2563eb)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 0 1px rgba(59,130,246,0.3),0 8px 24px rgba(37,99,235,0.25)' }}>
-            <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z" /><path d="M2 17l10 5 10-5" /><path d="M2 12l10 5 10-5" /></svg>
-          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo-icon-white.svg" alt="Build Mind" width={100} height={95} />
           <div style={{ lineHeight: 1.15 }}>
             <p style={{ fontSize: 56, fontWeight: 700, color: '#f0f4ff', fontFamily: '"Space Grotesk",sans-serif' }}>BuildMind</p>
             <p style={{ fontSize: 31, color: 'rgba(240,244,255,0.7)', fontWeight: 500 }}>

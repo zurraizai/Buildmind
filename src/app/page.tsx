@@ -391,10 +391,8 @@ export default function HomePage() {
         backdropFilter: scrolled ? 'blur(32px)' : 'none',
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 14, cursor: 'none' }} onClick={go} {...interactiveProps}>
-          <div style={{ width: 40, height: 40, borderRadius: 12, background: 'linear-gradient(135deg,#1a3a8a,#2563eb)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 0 1px rgba(59,130,246,0.3),0 8px 24px rgba(37,99,235,0.25)', position: 'relative', overflow: 'hidden', flexShrink: 0 }}>
-            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg,rgba(255,255,255,0.1),transparent)' }} />
-            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z" /><path d="M2 17l10 5 10-5" /><path d="M2 12l10 5 10-5" /></svg>
-          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo-icon-white.svg" alt="Build Mind" width={44} height={42} style={{ flexShrink: 0 }} />
           <div style={{ lineHeight: 1.1 }}>
             <p style={{ fontSize: 15, fontWeight: 700, color: '#f0f4ff', fontFamily: '"Space Grotesk",sans-serif' }}>Build Mind</p>
             <p style={{ fontSize: 9.5, color: 'rgba(240,244,255,0.62)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>by Mediatiz Foundation</p>
@@ -1059,9 +1057,8 @@ export default function HomePage() {
           <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr', gap: 48, marginBottom: 48 }}>
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
-                <div style={{ width: 36, height: 36, borderRadius: 10, background: 'linear-gradient(135deg,#1a3a8a,#2563eb)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px rgba(37,99,235,0.3)' }}>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z" /><path d="M2 17l10 5 10-5" /><path d="M2 12l10 5 10-5" /></svg>
-                </div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/logo-icon-white.svg" alt="Build Mind" width={38} height={36} />
                 <div>
                   <p style={{ fontFamily: '"Space Grotesk",sans-serif', fontSize: 14, fontWeight: 700, color: '#f0f4ff', margin: 0 }}>Build Mind</p>
                   <p style={{ fontSize: 9.5, color: 'rgba(240,244,255,0.6)', letterSpacing: '0.05em', textTransform: 'uppercase', margin: 0 }}>by Mediatiz Foundation</p>
